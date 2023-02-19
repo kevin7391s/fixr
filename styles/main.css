@@ -81,7 +81,7 @@ img {
 }
 
 button {
-  background-color: #0070c0;
+  background-color: darkslategray;
   color: #fff;
   border: none;
   padding: 16px 32px;
@@ -95,7 +95,7 @@ button {
 }
 
 button:hover {
-  background-color: #005aa6;
+  background-color: #92c3be;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
