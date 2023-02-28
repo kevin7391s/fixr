@@ -150,6 +150,9 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  bottom: 20px;
+  max-height: 500px;
+  overflow: auto;
 }
 
 .message {
@@ -158,7 +161,6 @@ button[type="submit"] {
   max-width: 70%;
   border-radius: 10px;
   margin-bottom: 10px;
-  font-size: 20px;
 }
 
 .user {
@@ -184,7 +186,8 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+  flex-shrink: 0;
 }
 
 .fixr-response:before {
@@ -209,14 +212,15 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+  flex-shrink: 0;
 }
 
 .user-response:before {
   content: "";
   position: absolute;
   right: -16px;
-  top: 8px;
+
   width: 0;
   height: 0;
   border-style: solid;
@@ -286,8 +290,9 @@ footer p {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  background-color: #f2f2f2;
+
   padding-bottom: 0;
 }
 #chat-input {

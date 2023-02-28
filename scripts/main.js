@@ -27,3 +27,7 @@ form.addEventListener("submit", (event) => {
     appendMessage("fixr", "I see.  Tell me more.");
   }, 1000);
 });
+
+//const scrollElem(elem){
+
+//}
