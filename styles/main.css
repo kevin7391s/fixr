@@ -151,7 +151,7 @@ button[type="submit"] {
   flex-direction: column;
   margin: 20px;
   bottom: 20px;
-  max-height: 500px;
+  max-height: 400px;
   overflow: auto;
 }
 
