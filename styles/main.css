@@ -151,7 +151,7 @@ button[type="submit"] {
   flex-direction: column;
   margin: 20px;
   bottom: 20px;
-  max-height: 100px;
+  max-height: 450px;
   overflow: auto;
 }
 
@@ -178,7 +178,7 @@ button[type="submit"] {
 
 .fixr-response {
   background-color: #e1ffc7;
-  background-color: black;
+
   color: #4f4f4f;
   border-radius: 15px;
   padding: 10px 15px;
