@@ -1,5 +1,8 @@
+const conversation = document.getElementById("conversation");
+const form = document.getElementById("chat-form");
+const input = document.getElementById("chat-input");
+
 function appendMessage(sender, message) {
-  const conversation = document.getElementById("conversation");
   const messageElem = document.createElement("div");
   messageElem.innerHTML = message;
 
@@ -11,9 +14,6 @@ function appendMessage(sender, message) {
 
   conversation.appendChild(messageElem);
 }
-
-const form = document.getElementById("chat-form");
-const input = document.getElementById("chat-input");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -28,6 +28,8 @@ form.addEventListener("submit", (event) => {
   }, 1000);
 });
 
-//const scrollElem(elem){
+const submitButton = document.getElementById("button-input");
 
-//}
+submitButton.addEventListener("click", function () {
+  conversation.scrollTop = conversation.scrollHeight;
+});
