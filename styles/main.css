@@ -19,6 +19,7 @@ body {
 h1 {
   font-size: 36px;
   margin: 20px;
+  margin-top: 40px;
   color: #4f4f4f;
 }
 
@@ -81,7 +82,7 @@ img {
 }
 
 button {
-  background-color: darkslategray;
+  background-color: #0070c0;
   color: #fff;
   border: none;
   padding: 16px 32px;
@@ -95,13 +96,13 @@ button {
 }
 
 button:hover {
-  background-color: #92c3be;
+  background-color: #005aa6;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  font-size: 48px;
-  margin-top: 80px;
+  /* font-size: 48px; */
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #333;
   font-weight: bold;
@@ -224,7 +225,6 @@ button[type="submit"] {
 }
 
 footer {
-  background-color: #4f4f4f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,8 +233,38 @@ footer {
 }
 
 footer p {
-  margin: 10px 0;
+  font-size: 14px;
 }
+
+.socials {
+  font-size: 21px;
+  display: inline-block;
+}
+
+#fb-icon:hover {
+  color: #4267b2;
+}
+
+#ig-icon:hover {
+  color: #e1306c;
+}
+
+#yt-icon:hover {
+  color: #ff0000;
+}
+
+/* footer {
+  background-color: #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+} */
+
+/* footer p {
+  margin: 10px 0;
+} */
 
 .testimonial {
   border: 2px solid #4f4f4f;
@@ -251,4 +281,18 @@ footer p {
 .testimonial h4 {
   font-size: 24px;
   color: #4f4f4f;
+}
+#chat-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+#chat-input {
+  width: 90%;
+}
+#button-input {
+  width: 90%;
 }

@@ -8,7 +8,7 @@
 
     <!-- Main css  -->
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    
 
     <!--Jquery file for navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,8 +21,10 @@
 
     <form id="chat-form">
       <label for="chat-input">Type your message:</label>
+     
       <input type="text" id="chat-input" />
-      <button type="submit">send</button>
+      <button type="submit" id="button-input">send</button>
+      
     </form>
 
     <!--Main js file-->
@@ -34,5 +36,6 @@
             $("#nav-placeholder").replaceWith(data);
         });
     </script> 
+    
   </body>
 </html>
