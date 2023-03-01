@@ -24,19 +24,21 @@ function appendMessage(sender, message) {
   }, 50);
 }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
 
-  // users message = input.value
-  const message = input.value;
+    // users message = input.value
+    const message = input.value;
 
-  // set the input field back to empty
-  input.value = "";
+    // set the input field back to empty
+    input.value = "";
 
-  // call above function with "user as the"
-  appendMessage("user", message);
+    // call above function with "user as the"
+    appendMessage("user", message);
 
-  setTimeout(() => {
-    appendMessage("fixr", "I see.  Tell me more.");
-  }, 1000);
+    setTimeout(() => {
+      appendMessage("fixr", "I see.  Tell me more.");
+    }, 1000);
+  }
 });
