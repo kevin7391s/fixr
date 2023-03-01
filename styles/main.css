@@ -150,7 +150,6 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  bottom: 20px;
   max-height: 450px;
   overflow: auto;
 }
@@ -161,6 +160,7 @@ button[type="submit"] {
   max-width: 70%;
   border-radius: 10px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .user {
@@ -178,7 +178,6 @@ button[type="submit"] {
 
 .fixr-response {
   background-color: #e1ffc7;
-
   color: #4f4f4f;
   border-radius: 15px;
   padding: 10px 15px;
@@ -187,6 +186,7 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
+  /* allow scrolling content and prevent chat box from shrinking*/
   overflow: auto;
   flex-shrink: 0;
 }
@@ -213,6 +213,7 @@ button[type="submit"] {
   max-width: 75%;
   text-align: left;
   position: relative;
+  /* allow scrolling content and prevent chat box from shrinking*/
   overflow: auto;
   flex-shrink: 0;
 }
@@ -221,7 +222,7 @@ button[type="submit"] {
   content: "";
   position: absolute;
   right: -16px;
-
+  top: 8px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -286,19 +287,4 @@ footer p {
 .testimonial h4 {
   font-size: 24px;
   color: #4f4f4f;
-}
-#chat-form {
-  background-color: #f5f5f5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding-bottom: 0;
-}
-#chat-input {
-  width: 90%;
-}
-#button-input {
-  width: 90%;
 }
