@@ -24,7 +24,9 @@ function appendMessage(sender, message) {
   }, 50);
 }
 
-form.addEventListener("keypress", function (e) {
+// previous first argument was "submit", button is now removed
+// on event = keypress & inside function if key = enter -> continue
+form.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
 
