@@ -107,7 +107,7 @@ input[type="text"] {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-
+/*
 button[type="submit"] {
   background-color: #0070c0;
   color: #fff;
@@ -117,6 +117,7 @@ button[type="submit"] {
   border-radius: 20px;
   cursor: pointer;
 }
+*/
 
 /* Conversation styles */
 #conversation {
