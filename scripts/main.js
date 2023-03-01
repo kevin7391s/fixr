@@ -21,7 +21,7 @@ function appendMessage(sender, message) {
   // scroll every time element is added
   setTimeout(() => {
     conversation.scrollTop = conversation.scrollHeight;
-  }, 100);
+  }, 50);
 }
 
 // previous first argument was "submit", button is now removed
