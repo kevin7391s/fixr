@@ -8,6 +8,7 @@
 
     <!-- Main css  -->
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/pricingplan.css" />
 
     <!--Jquery file for navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,7 +22,7 @@
 
     <!--jQuery for card-->
     <script>
-      $.get("components/card.html", function (data) {
+      $.get("components/pricingtable.html", function (data) {
         $("#card-placeholder").replaceWith(data);
       });
     </script>
